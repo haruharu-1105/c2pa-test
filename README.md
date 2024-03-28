@@ -1,6 +1,10 @@
 # c2pa-test
 このリポジトリは、画像ファイルに含まれるC2PA情報を確認するためのリポジトリです。
 
+## ざっくり喩え
+画像ファイルのメタ情報に格納します。
+（JPEGのEXIFやwebuiのpnginfo）。
+
 ## 使用方法    
 1, 画像をダウンロードする。    
 https://github.com/haruharu-1105/c2pa-test/blob/main/asset/pink-hair2.jpg
