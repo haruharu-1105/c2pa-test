@@ -1,6 +1,6 @@
 # c2pa-test
 このリポジトリは、個人作成のお試しリポジトリです。   
-画像ファイルに含まれる[C2PA](https://c2pa.org/specifications/specifications/1.3/index.html)の来歴情報の確認手順を記載しています。   
+画像ファイルに含まれる[C2PA](https://c2pa.org/specifications/specifications/2.1/index.html)の来歴情報の確認手順を記載しています。   
 
 ## Adobeさんが提供しているC2PA情報を確認できるブラウザ拡張があります。
 https://chromewebstore.google.com/detail/content-credentials/dmfbmenkapmaoldfgacgkoaoiblkimel?pli=1
