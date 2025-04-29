@@ -24,11 +24,11 @@ Adobeのオンライン署名サービスを使う
    TIPS 署名対象ファイル名 - 西暦日付 - 時間 - Cr.元の拡張子 です。  
 
 ## 2. C2PAの検証
-### 3.1 オンライン検証サイトを使う   
+### 2.1 オンライン検証サイトを使う   
 1. [Content Authenticity inspect](https://contentauthenticity.adobe.com/inspect) を開きます。   
 1. 「ファイルを選択」またはドラッグ＆ドロップで署名済み画像をアップロードします。    
 1. 検証結果画面で、署名者やタイムスタンプ、来歴情報などを確認します。   
-### 3.2 Adobeさん作成のWebブラウザ拡張で手軽に確認  
+### 2.2 Adobeさん作成のWebブラウザ拡張で手軽に確認  
 1. Chrome ウェブストアから「[Adobe Content Authenticity](https://chromewebstore.google.com/detail/content-credentials/dmfbmenkapmaoldfgacgkoaoiblkimel?pli=1)」拡張機能をインストールします。  
 1. 署名済み画像をブラウザで開くと、拡張のアイコンから来歴情報がポップアップ表示します。  
 
