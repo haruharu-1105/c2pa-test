@@ -12,6 +12,7 @@ https://helpx.adobe.com/jp/creative-cloud/help/content-credentials.html
 
 ## 1. C2PAの署名
 ### Adobeのオンライン署名サービスを使います  
+💡注意事項💡
 - Adobeクラウド上に、来歴情報が保存されるのをオフにする設定は**ありません。**  
 - AdobeのC2PAの場合、署名済み画像から署名情報を削除する方法は見つかっていません。削除前のファイルは大切に保管してくださいな。  
 1. ブラウザで [Adobe Content Authenticity](https://contentauthenticity.adobe.com/) を開きます。
