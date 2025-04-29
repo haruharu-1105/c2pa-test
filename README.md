@@ -4,7 +4,7 @@ Adobeさんのオンラインサービスを使って、誰がいつ作った画
 
 ### 参考資料 Adobeさんの解説ページ
 https://helpx.adobe.com/jp/creative-cloud/help/content-credentials.html
-## 見出し  
+## 目次  
 1. [C2PAの署名](#1-C2PAの署名)  
 1. [C2PAの検証](#2-C2PAの検証)  
 
