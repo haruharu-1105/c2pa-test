@@ -1,6 +1,6 @@
 # c2pa-test 概要  
-このリポジトリは、個人作成のお試しリポジトリです。   
-画像ファイルに対してC2PA（Content Credentials Production & Authorization）の来歴情報を付与・検証するための手順をまとめました。  
+このリポジトリは、個人的に画像に「C2PA署名（来歴情報）」をつける・確認するためのお試し手順をまとめたものです。
+Adobeさんのオンラインサービスを使って、誰がいつ作った画像かなどの情報（コンテンツ資格情報）を埋め込めます。
 
 ### 参考資料 Adobeさんの解説ページ
 https://helpx.adobe.com/jp/creative-cloud/help/content-credentials.html
@@ -11,17 +11,25 @@ https://helpx.adobe.com/jp/creative-cloud/help/content-credentials.html
 ---
 
 ## 1. C2PAの署名
-Adobeのオンライン署名サービスを使う
+### Adobeのオンライン署名サービスを使う
 1. ブラウザで [Adobe Content Authenticity](https://contentauthenticity.adobe.com/) を開きます。
 1. 【Preferencesタブ】署名に含める情報を設定します。 (初回設定)
-   1. 署名に含める情報を設定します。（SNS垢など) AI学習拒否を宣言したい場合は、SNS垢の連携設定が必要です。
-   1. Preferencesタブ下部の「Apply」ボタンを押すとAppleyタブに繊維します。
+   1. 署名に含める情報を設定します。（SNS垢など)
+      - AIへの学習拒否を指定したい場合、名前を確認するか、少なくとも 1 つのSNS垢を接続後でのみ設定が可能です。
+   1. Preferencesタブ下部の「Apply」ボタンを押すとAppleyタブに遷移します。
 1. 【Applyタブ】署名対象ファイルの追加  
    1. 対象ファイルをアップロードします。  
-     ⚠TIPS⚠ 画像ファイル名が、署名内容に含まれます。
    1. 画面下部の「I acknowledge that I own the selected content or have permission to apply Content Credentials.」をチェックし、「Apply」を押します。
-1. 署名後のファイルをダウンロードします。  
-   TIPS 署名対象ファイル名 - 西暦日付 - 時間 - Cr.元の拡張子 です。  
+   1. 画面中央に「Signing your content」が表示され署名を開始します。(約15秒程度)
+1. 署名後の新しいファイルをダウンロードします。
+   1. 画面右下の「DownLoad」ボタンより署名済ファイルをダウンロードします。
+   - ファイル名の末尾に「- 日付 - 時刻 - Cr.jpg」のような名前が付きます。
+
+💡 補足情報（注意点）  
+- 署名時の情報（ニックネームなど）は、(署名ファイルに対して)後から変更できません。(再署名すれば可能です。）  
+- 元のファイル名が署名内容に含まれます。  
+- Adobeのクラウド上に来歴情報が保存されるのをオフにする設定は**ありません。**  
+- 一度署名した画像から、署名情報を削除する方法は見つかっていません。削除前のファイルは大切に保管してください。  
 
 ## 2. C2PAの検証
 ### 2.1 オンライン検証サイトを使う   
@@ -32,9 +40,9 @@ Adobeのオンライン署名サービスを使う
 1. Chrome ウェブストアから「[Adobe Content Authenticity](https://chromewebstore.google.com/detail/content-credentials/dmfbmenkapmaoldfgacgkoaoiblkimel?pli=1)」拡張機能をインストールします。  
 1. 署名済み画像をブラウザで開くと、拡張のアイコンから来歴情報がポップアップ表示します。  
 
-## サンプル署名画像があります   
-1, 署名済み画像をダウンロードします。  
-  [https://github.com/haruharu-1105/c2pa-test/blob/main/asset/GpOocMCbgAAaaew 2025-04-26 - 06.28.41 - Cr.jpg](https://github.com/haruharu-1105/c2pa-test/blob/main/asset/GpOocMCbgAAaaew%202025-04-26%20-%2006.28.41%20-%20Cr.jpg)  
-2, [Adobe Content Authenticity inspect](https://contentauthenticity.adobe.com/inspect) を開き、ファイルをアップロードする。  
+## 🎁 サンプル画像で試してみる  
+1, 署名済みのサンプル画像をこちらからダウンロード  
+👉 サンプル画像 [GpOocMCbgAAaaew 2025-04-26 - 06.28.41 - Cr.jpg](https://github.com/haruharu-1105/c2pa-test/blob/main/asset/GpOocMCbgAAaaew%202025-04-26%20-%2006.28.41%20-%20Cr.jpg)  
+2, 上で紹介した検証ページ[Adobe Content Authenticity inspect](https://contentauthenticity.adobe.com/inspect) にアップロードして内容を確認できます。  
 
 以上です。
