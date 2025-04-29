@@ -10,17 +10,17 @@ https://helpx.adobe.com/jp/creative-cloud/help/content-credentials.html
 
 ---
 
-## 1. C2PAの署名
+## 1. C2PAの署名  
 ### Adobeのオンライン署名サービスを使います  
-💡注意事項💡
+💡注意事項💡  
 - Adobeクラウド上に、来歴情報が保存されるのをオフにする設定は**ありません。**  
-- AdobeのC2PAの場合、署名済み画像から署名情報を削除する方法は見つかっていません。削除前のファイルは大切に保管してくださいな。  
-1. ブラウザで [Adobe Content Authenticity](https://contentauthenticity.adobe.com/) を開きます。
-1. 【Preferencesタブ】署名に含める情報を設定します。 (初回設定)
-   1. 署名に含める情報を設定します。（SNS垢など)
-      - AIへの学習拒否を指定したい場合、名前を確認するか、少なくとも 1 つのSNS垢を接続後でのみ設定が可能です。
-　　　 - 署名時の情報（ニックネームなど）は、(署名ファイルに対して)後から変更できません。
-   1. Preferencesタブ下部の「Apply」ボタンを押すとAppleyタブに遷移します。
+- AdobeのC2PAの場合、署名済み画像から署名情報を削除する方法は見つかっていません。削除前のファイルは大切に保管してくださいな。   
+1. ブラウザで [Adobe Content Authenticity](https://contentauthenticity.adobe.com/) を開きます。  
+1. 【Preferencesタブ】署名に含める情報を設定します。 (初回設定)  
+   1. 署名に含める情報を設定します。（SNS垢など)  
+      - AIへの学習拒否を指定したい場合、名前を確認するか、少なくとも 1 つのSNS垢を接続後でのみ設定が可能です。    
+      - 署名時の情報（ニックネームなど）は、(署名ファイルに対して)後から変更できません。   
+   1. Preferencesタブ下部の「Apply」ボタンを押すとAppleyタブに遷移します。  
 1. 【Applyタブ】署名対象ファイルの追加します。  
    1. 対象ファイルをアップロードします。 ※アップロードしたファイル名は、署名内容に含まれます。   
    1. 画面下部の「I acknowledge that I own the selected content or have permission to apply Content Credentials.」をチェックし、「Apply」を押します。
