@@ -14,7 +14,12 @@ https://helpx.adobe.com/jp/creative-cloud/help/content-credentials.html
 ### Adobeのオンライン署名サービスを使います  
 💡注意事項💡  
 - Adobeクラウド上に、来歴情報が保存されるのをオフにする設定は**ありません。**  
-- AdobeのC2PAの場合、署名済み画像から署名情報を削除する方法は見つかっていません。署名前ファイルは大切に保管してくださいな。   
+- Adobeクラウド上に、サムネ画像(最大800 x 800px)が保存されます。  
+  > Content Credential の保存方法  
+  > (前略)  
+  > アドビのパブリック Content Credentials クラウドに公開：ファイルの Content Credentials は、ファイルの小さなサムネイルコピーとともに、アドビのパブリック Content Credentials クラウドに保存されます。  
+  > https://helpx.adobe.com/jp/creative-cloud/help/cai/use-content-credentials.html
+- AdobeのC2PAの場合、署名済み画像から署名情報を削除する方法は見つかっていません。署名前ファイルは大切に保管してくださいな。
 1. ブラウザで [Adobe Content Authenticity](https://contentauthenticity.adobe.com/) を開きます。  
 1. 【Preferencesタブ】署名に含める情報を設定します。 (初回設定)  
    1. 署名に含める情報を設定します。（SNS垢など)  
