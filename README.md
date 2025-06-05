@@ -8,7 +8,8 @@
    > (前略)  
    > アドビのパブリック Content Credentials クラウドに公開：ファイルの Content Credentials は、ファイルの小さなサムネイルコピーとともに、アドビのパブリック Content Credentials クラウドに保存されます。  
    > https://helpx.adobe.com/jp/creative-cloud/help/cai/use-content-credentials.html
- - 署名後のファイルから電子透かしを完全に消去する方法は、私が知る限り存在しません。  
+ - Q. 署名済みファイルから電子透かしを完全に消去する方法  
+   A. 私が知る限り存在しません。  
 
 ### 参考資料 Adobeさんの解説ページ
 https://helpx.adobe.com/jp/creative-cloud/help/content-credentials.html
@@ -20,17 +21,20 @@ https://helpx.adobe.com/jp/creative-cloud/help/content-credentials.html
 
 ## 1. C2PAの署名  
 ### Adobeのオンライン署名サービスを使います    
-1. ブラウザで [Adobe Content Authenticity](https://contentauthenticity.adobe.com/) を開きます。  
-1. 【Preferencesタブ】署名に含める情報を設定します。 (初回設定)  
-   1. 署名に含める情報を設定します。（SNS垢など)  
-      - AIへの学習拒否を**指定したい場合**、名前を確認するか、少なくとも 1 つのSNS垢を接続後でのみ設定が可能です。    
-      - 署名時の情報（ニックネームなど）は、(署名ファイルに対して)**後から変更できません。**   
-   1. Preferencesタブ下部の「Apply」ボタンを押すとAppleyタブに遷移します。  
-1. 【Applyタブ】署名対象ファイルの追加します。  
+1. サイトにアクセス
+   - ブラウザで [Adobe Content Authenticity](https://contentauthenticity.adobe.com/) を開きます。
+1. Preferencesタブで署名情報を設定
+- 初回利用時は、署名に含める情報を設定します。
+  - AIへの学習拒否を**指定したい場合**、名前を確認するか、少なくとも 1 つのSNS垢を接続後でのみ設定が可能です。
+  - 署名時の情報（ニックネームなど）は、(署名ファイルに対して)**後から変更できません。**   
+- 設定後、画面右下「Apply」ボタンをクリックすると、Applyタブに移動します。
+3. Applyタブでファイルをアップロードし署名を適用
    1. 対象ファイルをアップロードします。 ※アップロードしたファイル名は、**署名内容に含まれます。**   
-   1. 画面下部の「I acknowledge that I own the selected content or have permission to apply Content Credentials.」をチェックし、「Apply」を押します。
-   1. 画面中央に「Signing your content」が表示され署名を開始します。(約15秒程度)
-1. 署名後の新しいファイルをダウンロードします。
+   1. 画面右下の「Apply」をクリックし署名を開始します。
+      > 「I acknowledge that I own the selected content or have permission to apply Content Credentials.  
+      > 私は、選択したコンテンツを所有していること、またはコンテンツ資格情報を適用する許可を得ていることを認めます。  
+   1. 画面中央に「Signing your content」が表示され署名を開始します。(約10秒程度)
+1. 署名済みファイルのダウンロード
    1. 画面右下の「DownLoad」ボタンより署名済ファイルをダウンロードします。
    - ファイル名の末尾に「- 日付 - 時刻 - Cr.jpg」のような名前が付きます。
 
@@ -38,7 +42,7 @@ https://helpx.adobe.com/jp/creative-cloud/help/content-credentials.html
 - サムネイル（最大800×800px）とファイル名が公開クラウドに保存されます。
 - クラウドへ保存のOFF設定なしです。
 - 電子透かしの完全削除方法は不明です。  
-  ※正確な説明すると、C2PAの来歴情報のメタデータは削除できます。画像に埋め込まれた電子透かしの削除方法は不明です。
+  ※正確には、C2PAの来歴情報のメタデータは削除できます。画像に埋め込まれた電子透かしを削除する方法は、不明です。
 - 署名前ファイルは大切にバックアップ保管してくださいな。
 
 ## 2. C2PAの検証
